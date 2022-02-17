@@ -5,10 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>TIC-TAC-TOE</title>
+    <title>XO-XO-XO</title>
 </head>
 <body>
-    
+    <div class="div-overlay" id="overlay">
+        <div class="player-details">
+            <div class="detail-field">
+                <h1>Let's TIC-TAC-TOE !!</h1>
+            </div>
+            <div class="detail-field">
+                <label class="label-field" for="player1">Player 1: X</label>&nbsp;&nbsp;&nbsp;
+                <input class="input-field" type="text" name="player1" id="player1" placeholder="Player1"><br><br>
+            </div>
+            <div class="detail-field">
+                <label class="label-field" for="player2">Player 2: O</label>&nbsp;&nbsp;&nbsp;
+                <input class="input-field" type="text" name="player2" id="player2" placeholder="Player2"><br><br>
+            </div>
+            <div class="detail-field">
+                <button id="start-button" class="button" type="click">START</button>
+            </div>
+        </div>
+    </div>
+    <div class="game-container">
+        <div class="play-area" id="play-area">
+            <div class="sidebar" id="sidebar-1"></div>
+            <div class="game-grid">
+                <div class="grid-cell" id="1"></div>
+                <div class="grid-cell" id="2"></div>
+                <div class="grid-cell" id="3"></div>
+                <div class="grid-cell" id="4"></div>
+                <div class="grid-cell" id="5"></div>
+                <div class="grid-cell" id="6"></div>
+                <div class="grid-cell" id="7"></div>
+                <div class="grid-cell" id="8"></div>
+                <div class="grid-cell" id="9"></div>
+            </div>
+            <div class="sidebar" id="sidebar-2"></div>
+        </div>
+        <div class="message-area">
+            <div></div>
+            <div class="clubber">
+                <div id="turn-message" class="turn-message"></div>
+                <div id="game-message" class="game-message"></div>
+                <button id="restart-button" class="button restart-button" type="button">RESTART</button>
+            </div>
+            <div></div>
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
